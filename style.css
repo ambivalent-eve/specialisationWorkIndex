@@ -43,6 +43,11 @@ header {
   margin-block-end: 3rem;
 }
 
+h4 {
+  margin-block-start: 0.3rem;
+  margin-block-end: 0.5rem;
+}
+
 .mainNavContainer {
   flex: 1;
   display: flex;
