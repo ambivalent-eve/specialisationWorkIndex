@@ -79,6 +79,7 @@ main {
   backdrop-filter: blur(19px);
   -webkit-backdrop-filter: blur(5px);
   padding: 1rem;
+  width: 100%;
 }
 
 section {
@@ -143,9 +144,6 @@ footer {
     max-width: 80rch;
     justify-content: space-between;
     flex-direction: row;
-  }
-  main {
-    flex: 1;
   }
   aside {
     flex: 0;
