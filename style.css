@@ -153,6 +153,14 @@ footer {
   footer {
     margin-block-start: 1rem;
   }
+  img {
+    margin-block-start: 1rem;
+    margin-block-end: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+    background-blend-mode:;
+    box-shadow: 0px 4px 24px 1px rgba(0, 0, 0, 0.2);
+  }
 }
 /* compact breakpoint : phone in portrait */
 @media (width < 600px) {
