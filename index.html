@@ -34,29 +34,31 @@
         <a href="./assignment1.html">Assignment 1</a>
         <a href="">Assignment 2</a>
       </nav>
-    </div>
-    <!--I had to look into why the page wasn't centred properly as all the content kept going to the side. In the end, I had to use the AI agent and ask why it had occurred. What had happened was that the <div> wrapper was not closed properly which caused the footer to stay inside the flex container.-->
+      <!--I had to look into why the page wasn't centred properly as all the content kept going to the side. In the end, I had to use the AI agent and ask why it had occurred. What had happened was that the <div> wrapper was not closed properly which caused the footer to stay inside the flex container.-->
 
-    <main>
-      <section id="intro-section">
-        <h3>About me!</h3>
-        <p>
-          Hi! I'm Chai and I'm currently studying Bachelor of Design at Digital
-          Media at RMIT University. This page will illustrate my work for
-          Interface Design and Development as I strive my way towards creating
-          my own unique interfaces through intermediate and advanced code such
-          as HTML, CSS and Javascript.
-        </p>
-      </section>
-      <section>
-        <h3>Brief summary of the project!</h3>
-        <p>
-          This work will cover my advancement towards creating an audio
-          instrument, where I will be creating my own dynamic soundtracker for
-          Dungeons and Dragons.
-        </p>
-      </section>
-    </main>
+      <main>
+        <section id="intro-section">
+          <h3>About me!</h3>
+          <p>
+            Hi! I'm Chai and I'm currently studying Bachelor of Design at
+            Digital Media at RMIT University. This page will illustrate my work
+            for Interface Design and Development as I strive my way towards
+            creating my own unique interfaces through intermediate and advanced
+            code such as HTML, CSS and Javascript.
+          </p>
+        </section>
+        <section>
+          <h3>Brief summary of the project!</h3>
+          <p>
+            This work will cover my advancement towards creating an audio
+            instrument, where I will be creating my own dynamic soundtracker for
+            Dungeons and Dragons.
+          </p>
+        </section>
+      </main>
+      <aside></aside>
+    </div>
+    <!--Again, I had to rely on the agent to figure out why exactly the contents of this page was still to the side. By asking what went wrong, it explained to me that the .mainNavContainer was responsible for centering the child elements, and because main was outside of it, it was not affected by its rules. I had to move the final </div> to be after the </main> so that it remains within the layout. Additionally, I was told to keep <aside></aside> within the wrapper for symmetry to balance out nav's flex: 1 with its own flex: 1.-->
 
     <footer>
       <p>
