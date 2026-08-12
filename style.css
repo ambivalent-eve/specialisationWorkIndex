@@ -195,3 +195,11 @@ img {
   border: 2px solid rgb(255, 255, 255); /*I wanted to have a slight white border to contrast against the black blurred out background. I thought the difference in values would make the boxes pop out more and look cleaner. I ended up getting the code from a website named Stack Overflow, where people ask questions about coding and so forth. https://stackoverflow.com/questions/20321678/make-a-div-transparent-like-a-blurred-mirror*/
   font-size: 18px;
 }
+
+a:link {
+  color: orange;
+}
+
+a:visited {
+  color: rgb(192, 168, 103);
+}
