@@ -41,8 +41,856 @@
 
       <main>
         <section>
-          <h3 class="firstSectionHeading">Nothing...</h3>
-          <p>Check back soon!</p>
+          <h2 class="firstSectionHeading">Information Design</h2>
+          <h3>Prototype 1</h3>
+          <p>
+            The first prototype. Here, I wanted to emulate an audio player for
+            the purposes of experimenting with player controls. I had the three
+            most common buttons presented, such as the play, skip and shuffle
+            button and presented them to the user for use in hopes that the
+            buttons presented would be intuitive. The chosen technique here was
+            loadData(IndexValue) where I emulated the randomness of a song
+            through index values. When clicking the shuffle button, the code
+            would select a random index number and then play a song associated
+            to that index. Whilst this worked for that singular purpose, it
+            doesn't actually shuffle the playlist and instead just plays a
+            random song.
+          </p>
+          <img
+            src="assets\assignment2images\Screenshot 2026-09-30 122717.png"
+          />
+          <details><table>
+
+    <thead><tr>
+
+        <th>Author</th>
+        <th>Date</th>
+        <th>Subject</th>
+        <th>Body</th>
+
+    </tr></thead>
+
+    <tbody>
+
+      <tr>
+
+        <td>ambivalent-eve</td>
+        <td>Wed Sep 9 17:07:58 2026 +1000</td>
+        <td>Initial commit</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ambivalent-eve</td>
+        <td>Wed Sep 9 18:42:55 2026 +1000</td>
+        <td>added code for playing songs</td>
+        <td> shuffling and ending. added icons and 6 different tracks</td>
+
+      </tr>
+
+      <tr>
+
+        <td>ambivalent-eve</td>
+        <td>Wed Sep 9 18:58:25 2026 +1000</td>
+        <td>fixed songs not playing</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ambivalent-eve</td>
+        <td>Mon Sep 28 14:24:33 2026 +1000</td>
+        <td>added comments to what each code does</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ambivalent-eve</td>
+        <td>Wed Sep 30 12:42:24 2026 +1000</td>
+        <td>fixed formatting</td>
+        <td></td>
+
+      </tr>
+
+    </tbody>
+
+</table></details>
+          <h3>Prototype 3</h3>
+          <p>
+            Here I decided to try adding clear instructions to the user so that
+            they could try playing with the new play interactions. I added text
+            instructions such as "press space to play" and whatnot whilst
+            focusing on changing the eventListener to use keydown instead of
+            click. I changed the play to work with space, skip to work with
+            enter and r to work with shuffle. The visual changes weren't very
+            much but I wanted to experiment and learn with how I could use the
+            keys as part of the interactive experience. I was initially going to
+            use tab as shuffle but it would conflict with the browser shortcuts
+            so I avoided it.
+          </p>
+          <img
+            src="assets\assignment2images\Screenshot 2026-09-30 130454.png"
+          />
+          <details><table>
+
+    <thead><tr>
+
+        <th>Author</th>
+        <th>Date</th>
+        <th>Subject</th>
+        <th>Body</th>
+
+    </tr></thead>
+
+    <tbody>
+
+      <tr>
+
+        <td>ambivalent-eve</td>
+        <td>Wed Sep 9 17:07:58 2026 +1000</td>
+        <td>Initial commit</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ambivalent-eve</td>
+        <td>Wed Sep 9 18:42:55 2026 +1000</td>
+        <td>added code for playing songs</td>
+        <td> shuffling and ending. added icons and 6 different tracks</td>
+
+      </tr>
+
+      <tr>
+
+        <td>ambivalent-eve</td>
+        <td>Wed Sep 9 18:58:25 2026 +1000</td>
+        <td>fixed songs not playing</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ambivalent-eve</td>
+        <td>Mon Sep 28 14:26:54 2026 +1000</td>
+        <td>pulled over code comments from prototype 1</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ambivalent-eve</td>
+        <td>Mon Sep 28 15:41:11 2026 +1000</td>
+        <td>used ai agent to help me use the yates shuffle method to change the order of songs</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ambivalent-eve</td>
+        <td>Mon Sep 28 16:04:32 2026 +1000</td>
+        <td>reworked the shuffle code with the help of the agent so that instead of choosing a random song when clicking shuffle</td>
+        <td> the shuffle button would work properly and randomise the order of the next song whilst keeping the current song playing</td>
+
+      </tr>
+
+      <tr>
+
+        <td>ambivalent-eve</td>
+        <td>Mon Sep 28 18:04:33 2026 +1000</td>
+        <td>added queue so that you could see order of songs</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ambivalent-eve</td>
+        <td>Mon Sep 28 20:17:44 2026 +1000</td>
+        <td>added a bit of css coding</td>
+        <td> simplified the coding in index and fixed all the divs,  and had the agent help me change the code slightly so that it would highlight the text in bold instead of making it say now playing</td>
+
+      </tr>
+
+      <tr>
+
+        <td>ambivalent-eve</td>
+        <td>Mon Sep 28 20:29:29 2026 +1000</td>
+        <td>made it so that the contents would actually be centred in the middle</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ambivalent-eve</td>
+        <td>Tue Sep 29 14:21:29 2026 +1000</td>
+        <td>imported code from another source for buttons</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ambivalent-eve</td>
+        <td>Tue Sep 29 15:07:45 2026 +1000</td>
+        <td>removed buttons but added code that should shuffle queue on space</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ambivalent-eve</td>
+        <td>Tue Sep 29 15:10:21 2026 +1000</td>
+        <td>fixed code so that it would shuffle properly</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ambivalent-eve</td>
+        <td>Tue Sep 29 15:14:45 2026 +1000</td>
+        <td>fixed line of code so that shuffling wont pause the song anymore</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ambivalent-eve</td>
+        <td>Tue Sep 29 15:29:06 2026 +1000</td>
+        <td>changed it so that instead of clicking on the buttons</td>
+        <td> you used your keyboard to change the queue</td>
+
+      </tr>
+
+      <tr>
+
+        <td>ambivalent-eve</td>
+        <td>Wed Sep 30 12:02:22 2026 +1000</td>
+        <td>Added some comments</td>
+        <td></td>
+
+      </tr>
+
+    </tbody>
+
+</table></details>
+          <h3>Prototype 6</h3>
+          <p>
+            In this I focused on the sliders as information design. I wanted the
+            users to be able to intuitively know that they could adjust the
+            sliders in order to change the volume/pitch of the song. The only
+            indicators I gave were that the sliders belonged to volume and
+            pitch. For this prototype I focused on matching
+            addEventListener("input", () => { with the range code in html so
+            that I could create functional sliders that customised the song to
+            the users wish.
+          </p>
+          <img
+            src="assets\assignment2images\Screenshot 2026-09-30 141156.png"
+          />
+          <details><table>
+
+    <thead><tr>
+
+        <th>Author</th>
+        <th>Date</th>
+        <th>Subject</th>
+        <th>Body</th>
+
+    </tr></thead>
+
+    <tbody>
+
+      <tr>
+
+        <td>ambivalent-eve</td>
+        <td>Wed Sep 9 17:07:58 2026 +1000</td>
+        <td>Initial commit</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ambivalent-eve</td>
+        <td>Wed Sep 9 18:42:55 2026 +1000</td>
+        <td>added code for playing songs</td>
+        <td> shuffling and ending. added icons and 6 different tracks</td>
+
+      </tr>
+
+      <tr>
+
+        <td>ambivalent-eve</td>
+        <td>Wed Sep 9 18:58:25 2026 +1000</td>
+        <td>fixed songs not playing</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ambivalent-eve</td>
+        <td>Wed Sep 30 11:07:43 2026 +1000</td>
+        <td>added code for volume sliders</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ambivalent-eve</td>
+        <td>Wed Sep 30 11:10:26 2026 +1000</td>
+        <td>fixed volume slider by removing play next code</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ambivalent-eve</td>
+        <td>Wed Sep 30 11:32:01 2026 +1000</td>
+        <td>recovered old skip function and added pitch slider</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ambivalent-eve</td>
+        <td>Wed Sep 30 11:40:22 2026 +1000</td>
+        <td>edited pitch message to include speed as well</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ambivalent-eve</td>
+        <td>Wed Sep 30 11:54:58 2026 +1000</td>
+        <td>added comments</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ambivalent-eve</td>
+        <td>Wed Sep 30 14:11:41 2026 +1000</td>
+        <td>moved content to middle</td>
+        <td></td>
+
+      </tr>
+
+    </tbody>
+
+</table></details>
+        </section>
+        <section>
+          <h2>Feedback</h2>
+          <h3>Prototype 2</h3>
+          <p>
+            For this prototype, I wanted the users to actually see when their
+            queue actually shuffles, otherwise it would've felt like the shuffle
+            button was there for decoration. First, I improved on the shuffle
+            code by changing to the Fisher Yates Shuffle through the help of the
+            agent in Visual Studio Code. With Math.random, I was able to shuffle
+            the entire playlist and customised it so that it only shuffled the
+            rest of the queue and not the current song. Afterwards, I had help
+            creating a code that would actually demonstrate the queue
+            randomising. I also made it so that when your mouse hovers over the
+            buttons, it changes the cursor to infer interactivity.
+          </p>
+          <img
+            src="assets/assignment2images\MedalTVScreenRecording20260930125832625-trim-1790737175275.gif"
+          />
+          <details><table>
+
+    <thead><tr>
+
+        <th>Author</th>
+        <th>Date</th>
+        <th>Subject</th>
+        <th>Body</th>
+
+    </tr></thead>
+
+    <tbody>
+
+      <tr>
+
+        <td>ambivalent-eve</td>
+        <td>Wed Sep 9 17:07:58 2026 +1000</td>
+        <td>Initial commit</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ambivalent-eve</td>
+        <td>Wed Sep 9 18:42:55 2026 +1000</td>
+        <td>added code for playing songs</td>
+        <td> shuffling and ending. added icons and 6 different tracks</td>
+
+      </tr>
+
+      <tr>
+
+        <td>ambivalent-eve</td>
+        <td>Wed Sep 9 18:58:25 2026 +1000</td>
+        <td>fixed songs not playing</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ambivalent-eve</td>
+        <td>Mon Sep 28 14:26:54 2026 +1000</td>
+        <td>pulled over code comments from prototype 1</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ambivalent-eve</td>
+        <td>Mon Sep 28 15:41:11 2026 +1000</td>
+        <td>used ai agent to help me use the yates shuffle method to change the order of songs</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ambivalent-eve</td>
+        <td>Mon Sep 28 16:04:32 2026 +1000</td>
+        <td>reworked the shuffle code with the help of the agent so that instead of choosing a random song when clicking shuffle</td>
+        <td> the shuffle button would work properly and randomise the order of the next song whilst keeping the current song playing</td>
+
+      </tr>
+
+      <tr>
+
+        <td>ambivalent-eve</td>
+        <td>Mon Sep 28 18:04:33 2026 +1000</td>
+        <td>added queue so that you could see order of songs</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ambivalent-eve</td>
+        <td>Mon Sep 28 20:17:44 2026 +1000</td>
+        <td>added a bit of css coding</td>
+        <td> simplified the coding in index and fixed all the divs,  and had the agent help me change the code slightly so that it would highlight the text in bold instead of making it say now playing</td>
+
+      </tr>
+
+      <tr>
+
+        <td>ambivalent-eve</td>
+        <td>Mon Sep 28 20:29:29 2026 +1000</td>
+        <td>made it so that the contents would actually be centred in the middle</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ambivalent-eve</td>
+        <td>Tue Sep 29 15:45:33 2026 +1000</td>
+        <td>ported one line of code from branch 3 so that shuffle wouldnt pause song</td>
+        <td></td>
+
+      </tr>
+
+    </tbody>
+
+</table></details>
+          <h3>Prototype 4</h3>
+          <p>
+            I focused on implementing a bar the user can click to change the
+            time placement of the song. By clicking on it, the timestamp will
+            change to reflect the new position. In this prototype I used the
+            click input with eventListener a lot in order to make the users
+            interactions have responsive feedbacks. When the user clicks on a
+            button that adds rain or slows the song down, the button changes
+            colour to green to reflect that the button is activated.
+          </p>
+          <img
+            src="assets\assignment2images\MedalTVScreenRecording20260930131753866-trim-1790738297702.gif"
+          />
+          <details><table>
+
+    <thead><tr>
+
+        <th>Author</th>
+        <th>Date</th>
+        <th>Subject</th>
+        <th>Body</th>
+
+    </tr></thead>
+
+    <tbody>
+
+      <tr>
+
+        <td>ambivalent-eve</td>
+        <td>Wed Sep 9 17:07:58 2026 +1000</td>
+        <td>Initial commit</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ambivalent-eve</td>
+        <td>Wed Sep 9 18:42:55 2026 +1000</td>
+        <td>added code for playing songs</td>
+        <td> shuffling and ending. added icons and 6 different tracks</td>
+
+      </tr>
+
+      <tr>
+
+        <td>ambivalent-eve</td>
+        <td>Wed Sep 9 18:58:25 2026 +1000</td>
+        <td>fixed songs not playing</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ambivalent-eve</td>
+        <td>Mon Sep 28 14:26:54 2026 +1000</td>
+        <td>pulled over code comments from prototype 1</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ambivalent-eve</td>
+        <td>Mon Sep 28 15:41:11 2026 +1000</td>
+        <td>used ai agent to help me use the yates shuffle method to change the order of songs</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ambivalent-eve</td>
+        <td>Mon Sep 28 16:04:32 2026 +1000</td>
+        <td>reworked the shuffle code with the help of the agent so that instead of choosing a random song when clicking shuffle</td>
+        <td> the shuffle button would work properly and randomise the order of the next song whilst keeping the current song playing</td>
+
+      </tr>
+
+      <tr>
+
+        <td>ambivalent-eve</td>
+        <td>Mon Sep 28 18:04:33 2026 +1000</td>
+        <td>added queue so that you could see order of songs</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ambivalent-eve</td>
+        <td>Mon Sep 28 20:17:44 2026 +1000</td>
+        <td>added a bit of css coding</td>
+        <td> simplified the coding in index and fixed all the divs,  and had the agent help me change the code slightly so that it would highlight the text in bold instead of making it say now playing</td>
+
+      </tr>
+
+      <tr>
+
+        <td>ambivalent-eve</td>
+        <td>Mon Sep 28 20:29:29 2026 +1000</td>
+        <td>made it so that the contents would actually be centred in the middle</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ambivalent-eve</td>
+        <td>Tue Sep 29 15:45:33 2026 +1000</td>
+        <td>ported one line of code from branch 3 so that shuffle wouldnt pause song</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ambivalent-eve</td>
+        <td>Tue Sep 29 16:14:45 2026 +1000</td>
+        <td>imported progress details code from https://www.youtube.com/watch?v=3jFsdp9qkjs&t=1204s</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ambivalent-eve</td>
+        <td>Tue Sep 29 17:55:19 2026 +1000</td>
+        <td>fixed code so that current timestamp would show</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ambivalent-eve</td>
+        <td>Tue Sep 29 21:01:14 2026 +1000</td>
+        <td>fixed progress bar being clickable where its not meant to be by adding an extra </div></td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ambivalent-eve</td>
+        <td>Tue Sep 29 22:15:26 2026 +1000</td>
+        <td>added two buttons to add rain audio and to slow down the pitch of the song</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ambivalent-eve</td>
+        <td>Wed Sep 30 10:25:10 2026 +1000</td>
+        <td>aligned buttons to be in center</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ambivalent-eve</td>
+        <td>Wed Sep 30 12:00:38 2026 +1000</td>
+        <td>added comments</td>
+        <td></td>
+
+      </tr>
+
+    </tbody>
+
+</table></details>
+          <h3>Prototype 5</h3>
+          <p>
+            I decided to radically change the format of the website to try and
+            emulate a soundboard. I gathered a list of different sound effects
+            from copyright-free websites and assigned each of them to a buttonid
+            that would activate on click. When the user clicks on the button,
+            the code sends a feedback back to the user with the sound that
+            should be played with audio.play(). When clicking on the buttons,
+            they change colour for a little bit every time they're clicked on to
+            also give the visual feedback of being activated. Same for when
+            they're hovered over.
+          </p>
+          <img
+            src="assets\assignment2images\Screenshot 2026-09-30 134409.png"
+          />
+          <details><table>
+
+    <thead><tr>
+
+        <th>Author</th>
+        <th>Date</th>
+        <th>Subject</th>
+        <th>Body</th>
+
+    </tr></thead>
+
+    <tbody>
+
+      <tr>
+
+        <td>ambivalent-eve</td>
+        <td>Wed Sep 9 17:07:58 2026 +1000</td>
+        <td>Initial commit</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ambivalent-eve</td>
+        <td>Wed Sep 9 18:42:55 2026 +1000</td>
+        <td>added code for playing songs</td>
+        <td> shuffling and ending. added icons and 6 different tracks</td>
+
+      </tr>
+
+      <tr>
+
+        <td>ambivalent-eve</td>
+        <td>Wed Sep 9 18:58:25 2026 +1000</td>
+        <td>fixed songs not playing</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ambivalent-eve</td>
+        <td>Mon Sep 28 14:26:54 2026 +1000</td>
+        <td>pulled over code comments from prototype 1</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ambivalent-eve</td>
+        <td>Mon Sep 28 15:41:11 2026 +1000</td>
+        <td>used ai agent to help me use the yates shuffle method to change the order of songs</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ambivalent-eve</td>
+        <td>Mon Sep 28 16:04:32 2026 +1000</td>
+        <td>reworked the shuffle code with the help of the agent so that instead of choosing a random song when clicking shuffle</td>
+        <td> the shuffle button would work properly and randomise the order of the next song whilst keeping the current song playing</td>
+
+      </tr>
+
+      <tr>
+
+        <td>ambivalent-eve</td>
+        <td>Mon Sep 28 18:04:33 2026 +1000</td>
+        <td>added queue so that you could see order of songs</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ambivalent-eve</td>
+        <td>Mon Sep 28 20:17:44 2026 +1000</td>
+        <td>added a bit of css coding</td>
+        <td> simplified the coding in index and fixed all the divs,  and had the agent help me change the code slightly so that it would highlight the text in bold instead of making it say now playing</td>
+
+      </tr>
+
+      <tr>
+
+        <td>ambivalent-eve</td>
+        <td>Mon Sep 28 20:29:29 2026 +1000</td>
+        <td>made it so that the contents would actually be centred in the middle</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ambivalent-eve</td>
+        <td>Tue Sep 29 15:45:33 2026 +1000</td>
+        <td>ported one line of code from branch 3 so that shuffle wouldnt pause song</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ambivalent-eve</td>
+        <td>Tue Sep 29 16:14:45 2026 +1000</td>
+        <td>imported progress details code from https://www.youtube.com/watch?v=3jFsdp9qkjs&t=1204s</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ambivalent-eve</td>
+        <td>Tue Sep 29 17:55:19 2026 +1000</td>
+        <td>fixed code so that current timestamp would show</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ambivalent-eve</td>
+        <td>Tue Sep 29 21:01:14 2026 +1000</td>
+        <td>fixed progress bar being clickable where its not meant to be by adding an extra </div></td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ambivalent-eve</td>
+        <td>Tue Sep 29 22:15:26 2026 +1000</td>
+        <td>added two buttons to add rain audio and to slow down the pitch of the song</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ambivalent-eve</td>
+        <td>Wed Sep 30 02:00:27 2026 +1000</td>
+        <td>made a soundboard</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ambivalent-eve</td>
+        <td>Wed Sep 30 10:16:41 2026 +1000</td>
+        <td>centred buttons to middle of screen</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ambivalent-eve</td>
+        <td>Wed Sep 30 11:58:23 2026 +1000</td>
+        <td>added some comments</td>
+        <td></td>
+
+      </tr>
+
+    </tbody>
+
+</table></details>
+          <h2>Conclusion</h2>
+          <p>
+            Though none of the prototypes are definitive, I found that exploring
+            each of them with a different purpose in mind helped make for a more
+            solidified idea for the final website. I think what the ultimate
+            idea would be is a way to somehow combine most of these prototypes
+            together. A soundboard where you could play sound effects or perhaps
+            add sounds to queue, a functional audio player, a way to customise
+            the song with different pitches, additional sounds to play in the
+            background such as rain and even functional keyboard controls.
+          </p>
         </section>
       </main>
 
