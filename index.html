@@ -36,6 +36,9 @@
         <a href="https://au.miro.com/app/board/u3jVOf5Gcuk=/"
           >Community of Practice</a
         >
+        <a href="https://github.com/ambivalent-eve/ambi-eve-finalInstrument"
+          >Final Instrument</a
+        >
       </nav>
       <!--I had to look into why the page wasn't centred properly as all the content kept going to the side. In the end, I had to use the AI agent and ask why it had occurred. What had happened was that the <div> wrapper was not closed properly which caused the footer to stay inside the flex container.-->
 
@@ -69,300 +72,350 @@
             and letting the music go in the background.
           </p>
         </section>
-        <section></section>
-        <h3>Final Project!</h3>
-        <img src="assignment3images\Screenshot 2026-10-30 115521.png" />
-        <p>
-          In the end, I crafted a dynamic soundtracker for D&D environments! The
-          idea was to create a sort of audio player that dungeon masters and
-          players would use for their games. Playing music to set the mood,
-          putting on ambiences for the atmosphere or even playing sound effects
-          for added in immersion. Thus, I created a soundtracker that basically
-          responds to that, with multiple songs with different genres to choose
-          from as well as ambience sounds one could toggle on to create a unique
-          atmosphere!
-        </p>
-        <section></section>
-        <h3>Features and Design Philosophies!</h3>
-        <img
-          src="assignment3images\MedalTVScreenRecording20261030122722470-trim-1793323661490.gif"
-        />
-        <p>
-          As what was primarily an audio player, I was ensuring that the user
-          would be met with conventional audio controls so that they wouldn't
-          have to learn any new models. This was the simplest interaction in my
-          project. A simple play and pause function, a skip and rewind function
-          as well as a shuffle and loop function. To make these functions work, I've used addEventListener various times within the code, most primarily click as users would have to click on various buttons to activate certain functions.
-        </p>
-        <img src="assignment3images\Screenshot 2026-10-30 123629.png"/>
-        <p>One important extended technique I've put great emphasis on however was the Math.random technique. As a soundtracker, audiences will most
-          likely want a shuffled playlist, so that no one experience is ever the same. The way the code works is that it shuffles the rest of the queue that's already
-          established. 
-        </p>
-        <img src="assignment3images\MedalTVScreenRecording20261030124333943.gif"/>
-        <p>One method I had for adding increased customisability was the feature to add songs and playlists to queues through the click of the button.
-          DMs who were selective with their music can now add their tracks one by one, or select the entire playlist to queue. I've incorporated such a
-          feature because I thought that there would be people who'd want to spend as little input as possible. To help with that, I've added playlists that
-          indicate what sort of mood the songs will bring and brought a minimum of three songs each playlist. Additionally, the first playlist the user
-          lands on is the 'all songs' playlist for those who'd rather hop in a D&D session and play all the songs straight away.
-        </p>
-        <img src="assignment3images\Screenshot 2026-10-30 130637.png"/>
-        <p>In accordance with the design philosophy of taking into account that there are people who'd minimise their inputs, I've incoporated a proper
-          loop function that doesn't loop the one singular song but rather the whole queue. This means that if the user decides to add all the songs in queue and loop them, they'd have an endless stream of music
-          that would always start over every time the queue ends.
-        </p>
-        <img src="assignment3images\MedalTVScreenRecording20261030131452767-trim-1793326624844.gif"/>
-        <p>Another feature I've incoporated for added dynamic immersion was the addition of ambience sounds. These sounds could be played alongside
-          any soundtrack, and the user can select multiple as well! As dynamic soundtrackers want to account for different environments and atmospheres,
-          I wanted to create the ability to manipulate the atmospheres through sound. 
-        </p>
-        <img src="assignment3images\Screenshot 2026-10-30 132541.png"/>
-        <p>This is done through associating each of them through a button ID that upon "click" would play the ambience in the audio player. Furthermore, users
-          could go even further and customise the pitch of the song themselves, which could result in slowed-down, melachonic tracks or fast paced, energetic tracks. This
-          is done through sliders, a quick and intuitive action. With these sliders, users can also change the volume of the songs or change the timestamps of the song to arrive
-          at different points.
-        </p>
-        <img src="assignment3images\Screenshot 2026-10-30 133726.png"/>
-        <p>To expand further on my desire to make the website feel interactive, I wanted to make it so that hovering your mouse over interactives or clicking on them actually gave responses. Thus, I made it so that every time the user hovered over the buttons, it became a teal like colour to signify that it was interactive. Clicking on said button would change its size a little as well, but another thing I've added was making it so that pressing the tab button on the keyboard could actually present which buttons were interactable and give you options to play certain buttons through only your keyboard.</p>
-        <img src="assignment3images\Screenshot 2026-10-30 134543.png"/>
-        <img src="assignment3images\Screenshot 2026-10-30 134654.png"/>
-        <p>An accessibility feature I've added was light mode and dark mode preferences. If the user preferred light mode on their browser, then they would receive the light mode colour scheme. I incoporated this because as a dynamic soundtracker, there may be times where you could be outside where the lens flare makes it difficult to see your screen. Thus, I wanted to add the toggles between the two in order for the user to adapt to more scenarios for tabletop gaming, as not all D&D takes place inside, sometimes players play outside as well in the sun.</p>
-    <img src="assignment3images\Screenshot 2026-10-30 135107.png"/>
-    Finally, one feature I've added was a small soundboard. This allows players and DMs to incoporate small, easy sounds for their world, primarily combat. DMs could play the sound of magic as they unleash lightning bolts, or maybe players could play the sound of swords swinging against the air to represent themselves. Though this does not adhere to being a dynamic soundtracker, one of the components of the brief was adapting to any solo or group dynamics. As D&D is a group activity that involves a lot of combat, it only makes sense to also include sound effects to throw inside the audio player for increased immersion.
+        <section>
+          <h3>Final Project!</h3>
+          <img src="assignment3images\Screenshot 2026-10-30 115521.png" />
+          <p>
+            In the end, I crafted a dynamic soundtracker for D&D environments!
+            The idea was to create a sort of audio player that dungeon masters
+            and players would use for their games. Playing music to set the
+            mood, putting on ambiences for the atmosphere or even playing sound
+            effects for added in immersion. Thus, I created a soundtracker that
+            basically responds to that, with multiple songs with different
+            genres to choose from as well as ambience sounds one could toggle on
+            to create a unique atmosphere!
+          </p>
+        </section>
+        <section>
+          <h3>Features and Design Philosophies!</h3>
+          <img
+            src="assignment3images\MedalTVScreenRecording20261030122722470-trim-1793323661490.gif"
+          />
+          <p>
+            As what was primarily an audio player, I was ensuring that the user
+            would be met with conventional audio controls so that they wouldn't
+            have to learn any new models. This was the simplest interaction in
+            my project. A simple play and pause function, a skip and rewind
+            function as well as a shuffle and loop function. To make these
+            functions work, I've used addEventListener various times within the
+            code, most primarily click as users would have to click on various
+            buttons to activate certain functions.
+          </p>
+          <img src="assignment3images\Screenshot 2026-10-30 123629.png" />
+          <p>
+            One important extended technique I've put great emphasis on however
+            was the Math.random technique. As a soundtracker, audiences will
+            most likely want a shuffled playlist, so that no one experience is
+            ever the same. The way the code works is that it shuffles the rest
+            of the queue that's already established.
+          </p>
+          <img
+            src="assignment3images\MedalTVScreenRecording20261030124333943.gif"
+          />
+          <p>
+            One method I had for adding increased customisability was the
+            feature to add songs and playlists on the left to queues through the
+            click of the button. DMs who were selective with their music can now
+            add their tracks one by one, or select the entire playlist to queue.
+            I've incorporated such a feature because I thought that there would
+            be people who'd want to spend as little input as possible. To help
+            with that, I've added playlists that indicate what sort of mood the
+            songs will bring and brought a minimum of three songs each playlist.
+            Additionally, the first playlist the user lands on is the 'all
+            songs' playlist for those who'd rather hop in a D&D session and play
+            all the songs straight away.
+          </p>
+          <img src="assignment3images\Screenshot 2026-10-30 130637.png" />
+          <p>
+            In accordance with the design philosophy of taking into account that
+            there are people who'd minimise their inputs, I've incoporated a
+            proper loop function that doesn't loop the one singular song but
+            rather the whole queue. This means that if the user decides to add
+            all the songs in queue and loop them, they'd have an endless stream
+            of music that would always start over every time the queue ends.
+          </p>
+          <img
+            src="assignment3images\MedalTVScreenRecording20261030131452767-trim-1793326624844.gif"
+          />
+          <p>
+            Another feature I've incoporated for added dynamic immersion was the
+            addition of ambience sounds. These sounds could be played alongside
+            any soundtrack, and the user can select multiple as well! As dynamic
+            soundtrackers want to account for different environments and
+            atmospheres, I wanted to create the ability to manipulate the
+            atmospheres through sound.
+          </p>
+          <img src="assignment3images\Screenshot 2026-10-30 132541.png" />
+          <p>
+            This is done through associating each of them through a button ID
+            that upon "click" would play the ambience in the audio player.
+            Furthermore, users could go even further and customise the pitch of
+            the song themselves, which could result in slowed-down, melachonic
+            tracks or fast paced, energetic tracks. This is done through
+            sliders, a quick and intuitive action. With these sliders, users can
+            also change the volume of the songs or change the timestamps of the
+            song to arrive at different points.
+          </p>
+          <img src="assignment3images\Screenshot 2026-10-30 133726.png" />
+          <p>
+            To expand further on my desire to make the website feel interactive,
+            I wanted to make it so that hovering your mouse over interactives or
+            clicking on them actually gave responses. Thus, I made it so that
+            every time the user hovered over the buttons, it became a teal like
+            colour to signify that it was interactive. Clicking on said button
+            would change its size a little as well, but another thing I've added
+            was making it so that pressing the tab button on the keyboard could
+            actually present which buttons were interactable and give you
+            options to play certain buttons through only your keyboard.
+          </p>
+          <img src="assignment3images\Screenshot 2026-10-30 134543.png" />
+          <img src="assignment3images\Screenshot 2026-10-30 134654.png" />
+          <p>
+            An accessibility feature I've added was light mode and dark mode
+            preferences. If the user preferred light mode on their browser, then
+            they would receive the light mode colour scheme. I incoporated this
+            because as a dynamic soundtracker, there may be times where you
+            could be outside where the lens flare makes it difficult to see your
+            screen. Thus, I wanted to add the toggles between the two in order
+            for the user to adapt to more scenarios for tabletop gaming, as not
+            all D&D takes place inside, sometimes players play outside as well
+            in the sun.
+          </p>
+          <img src="assignment3images\Screenshot 2026-10-30 135107.png" />
+          <p>
+            Finally, one feature I've added was a small soundboard. This allows
+            players and DMs to incoporate small, easy sounds for their world,
+            primarily combat. DMs could play the sound of magic as they unleash
+            lightning bolts, or maybe players could play the sound of swords
+            swinging against the air to represent themselves. Though this does
+            not adhere to being a dynamic soundtracker, one of the components of
+            the brief was adapting to any solo or group dynamics. As D&D is a
+            group activity that involves a lot of combat, it only makes sense to
+            also include sound effects to throw inside the audio player for
+            increased immersion.
+          </p>
+        </section>
         <!--Again, I had to rely on the agent to figure out why exactly the contents of this page was still to the side. By asking what went wrong, it explained to me that the .mainNavContainer was responsible for centering the child elements, and because main was outside of it, it was not affected by its rules. I had to move the final </div> to be after the </main> so that it remains within the layout. Additionally, I was told to keep <aside></aside> within the wrapper for symmetry to balance out nav's flex: 1 with its own flex: 1.-->
-<h3>Git Commit Logs!</h3>
-<details><table>
-
-    <thead><tr>
-
-        <th>Author</th>
-        <th>Date</th>
-        <th>Subject</th>
-        <th>Body</th>
-
-    </tr></thead>
-
-    <tbody>
-
-      <tr>
-
-        <td>ambivalent-eve</td>
-        <td>Thu Oct 29 09:08:08 2026 +1100</td>
-        <td>Initial commit</td>
-        <td></td>
-
-      </tr>
-
-      <tr>
-
-        <td>ambivalent-eve</td>
-        <td>Thu Oct 29 09:28:05 2026 +1100</td>
-        <td>ported over prototype 4 code</td>
-        <td></td>
-
-      </tr>
-
-      <tr>
-
-        <td>ambivalent-eve</td>
-        <td>Thu Oct 29 10:44:25 2026 +1100</td>
-        <td>added colour layout</td>
-        <td> removed slow button</td>
-
-      </tr>
-
-      <tr>
-
-        <td>ambivalent-eve</td>
-        <td>Thu Oct 29 11:11:33 2026 +1100</td>
-        <td>added more buttons (no functions yet) and hover/play visual</td>
-        <td></td>
-
-      </tr>
-
-      <tr>
-
-        <td>ambivalent-eve</td>
-        <td>Thu Oct 29 12:03:06 2026 +1100</td>
-        <td>matching volume and pitch slider to fit the play time aesthetics</td>
-        <td></td>
-
-      </tr>
-
-      <tr>
-
-        <td>ambivalent-eve</td>
-        <td>Thu Oct 29 21:41:45 2026 +1100</td>
-        <td>added sound effects from other prototype</td>
-        <td> fixed colours</td>
-
-      </tr>
-
-      <tr>
-
-        <td>ambivalent-eve</td>
-        <td>Thu Oct 29 23:30:13 2026 +1100</td>
-        <td>changed sound effects to have a button like appearance to them. when clicking tab or enter the user can use keyboard shortcuts to play sounds.</td>
-        <td></td>
-
-      </tr>
-
-      <tr>
-
-        <td>ambivalent-eve</td>
-        <td>Thu Oct 29 23:32:43 2026 +1100</td>
-        <td>got rid of the border on the sound effects</td>
-        <td></td>
-
-      </tr>
-
-      <tr>
-
-        <td>ambivalent-eve</td>
-        <td>Thu Oct 29 23:35:31 2026 +1100</td>
-        <td>fixed volume not increasing when pushing it through the halfway mark</td>
-        <td></td>
-
-      </tr>
-
-      <tr>
-
-        <td>ambivalent-eve</td>
-        <td>Fri Oct 30 03:48:36 2026 +1100</td>
-        <td>added more ambience sounds to play</td>
-        <td></td>
-
-      </tr>
-
-      <tr>
-
-        <td>ambivalent-eve</td>
-        <td>Fri Oct 30 04:00:12 2026 +1100</td>
-        <td>added a functioning back button</td>
-        <td></td>
-
-      </tr>
-
-      <tr>
-
-        <td>ambivalent-eve</td>
-        <td>Fri Oct 30 05:47:42 2026 +1100</td>
-        <td>Changed coding of the songorder and added a new songlibrary. now users can add songs to queue</td>
-        <td> or play songs</td>
-
-      </tr>
-
-      <tr>
-
-        <td>ambivalent-eve</td>
-        <td>Fri Oct 30 07:37:06 2026 +1100</td>
-        <td>added new songs and a playlist that indicates what mood they bring</td>
-        <td></td>
-
-      </tr>
-
-      <tr>
-
-        <td>ambivalent-eve</td>
-        <td>Fri Oct 30 08:11:59 2026 +1100</td>
-        <td>added playlists and several new songs (at least three songs per playlist)</td>
-        <td></td>
-
-      </tr>
-
-      <tr>
-
-        <td>ambivalent-eve</td>
-        <td>Fri Oct 30 08:29:45 2026 +1100</td>
-        <td>moved play-pause controls to bottom of screen to be similar to an audio player</td>
-        <td></td>
-
-      </tr>
-
-      <tr>
-
-        <td>ambivalent-eve</td>
-        <td>Fri Oct 30 09:06:14 2026 +1100</td>
-        <td>reverted back the player controls layout</td>
-        <td></td>
-
-      </tr>
-
-      <tr>
-
-        <td>ambivalent-eve</td>
-        <td>Fri Oct 30 09:53:54 2026 +1100</td>
-        <td>added styling to each area and fixed audio12</td>
-        <td></td>
-
-      </tr>
-
-      <tr>
-
-        <td>ambivalent-eve</td>
-        <td>Fri Oct 30 10:06:57 2026 +1100</td>
-        <td>updated dashboard to a three-column layout</td>
-        <td></td>
-
-      </tr>
-
-      <tr>
-
-        <td>ambivalent-eve</td>
-        <td>Fri Oct 30 10:17:46 2026 +1100</td>
-        <td>fixed night button not highlighting when on</td>
-        <td> added queue panel styling,  added a border</td>
-
-      </tr>
-
-      <tr>
-
-        <td>ambivalent-eve</td>
-        <td>Fri Oct 30 10:29:11 2026 +1100</td>
-        <td>added looping button that repeats the whole queue</td>
-        <td></td>
-
-      </tr>
-
-      <tr>
-
-        <td>ambivalent-eve</td>
-        <td>Fri Oct 30 10:41:46 2026 +1100</td>
-        <td>removed artists name from playlist so that it wouldnt be so cluttered</td>
-        <td> added hover effects to buttons and centered the playlist visuals in general</td>
-
-      </tr>
-
-      <tr>
-
-        <td>ambivalent-eve</td>
-        <td>Fri Oct 30 10:52:44 2026 +1100</td>
-        <td>added icons8 footer to credit them</td>
-        <td></td>
-
-      </tr>
-
-      <tr>
-
-        <td>ambivalent-eve</td>
-        <td>Fri Oct 30 11:03:00 2026 +1100</td>
-        <td>added a new function that allows you to add playlists to queues</td>
-        <td> added comments for code</td>
-
-      </tr>
-
-      <tr>
-
-        <td>ambivalent-eve</td>
-        <td>Fri Oct 30 11:21:03 2026 +1100</td>
-        <td>notes and intro modal</td>
-        <td>added notes to several codes,  brought back intro modal</td>
-
-      </tr>
-
-    </tbody>
-
-</table></details>
+        <h3>Git Commit Logs!</h3>
+        <details>
+          <table>
+            <thead>
+              <tr>
+                <th>Author</th>
+                <th>Date</th>
+                <th>Subject</th>
+                <th>Body</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>ambivalent-eve</td>
+                <td>Thu Oct 29 09:08:08 2026 +1100</td>
+                <td>Initial commit</td>
+                <td></td>
+              </tr>
+
+              <tr>
+                <td>ambivalent-eve</td>
+                <td>Thu Oct 29 09:28:05 2026 +1100</td>
+                <td>ported over prototype 4 code</td>
+                <td></td>
+              </tr>
+
+              <tr>
+                <td>ambivalent-eve</td>
+                <td>Thu Oct 29 10:44:25 2026 +1100</td>
+                <td>added colour layout</td>
+                <td>removed slow button</td>
+              </tr>
+
+              <tr>
+                <td>ambivalent-eve</td>
+                <td>Thu Oct 29 11:11:33 2026 +1100</td>
+                <td>
+                  added more buttons (no functions yet) and hover/play visual
+                </td>
+                <td></td>
+              </tr>
+
+              <tr>
+                <td>ambivalent-eve</td>
+                <td>Thu Oct 29 12:03:06 2026 +1100</td>
+                <td>
+                  matching volume and pitch slider to fit the play time
+                  aesthetics
+                </td>
+                <td></td>
+              </tr>
+
+              <tr>
+                <td>ambivalent-eve</td>
+                <td>Thu Oct 29 21:41:45 2026 +1100</td>
+                <td>added sound effects from other prototype</td>
+                <td>fixed colours</td>
+              </tr>
+
+              <tr>
+                <td>ambivalent-eve</td>
+                <td>Thu Oct 29 23:30:13 2026 +1100</td>
+                <td>
+                  changed sound effects to have a button like appearance to
+                  them. when clicking tab or enter the user can use keyboard
+                  shortcuts to play sounds.
+                </td>
+                <td></td>
+              </tr>
+
+              <tr>
+                <td>ambivalent-eve</td>
+                <td>Thu Oct 29 23:32:43 2026 +1100</td>
+                <td>got rid of the border on the sound effects</td>
+                <td></td>
+              </tr>
+
+              <tr>
+                <td>ambivalent-eve</td>
+                <td>Thu Oct 29 23:35:31 2026 +1100</td>
+                <td>
+                  fixed volume not increasing when pushing it through the
+                  halfway mark
+                </td>
+                <td></td>
+              </tr>
+
+              <tr>
+                <td>ambivalent-eve</td>
+                <td>Fri Oct 30 03:48:36 2026 +1100</td>
+                <td>added more ambience sounds to play</td>
+                <td></td>
+              </tr>
+
+              <tr>
+                <td>ambivalent-eve</td>
+                <td>Fri Oct 30 04:00:12 2026 +1100</td>
+                <td>added a functioning back button</td>
+                <td></td>
+              </tr>
+
+              <tr>
+                <td>ambivalent-eve</td>
+                <td>Fri Oct 30 05:47:42 2026 +1100</td>
+                <td>
+                  Changed coding of the songorder and added a new songlibrary.
+                  now users can add songs to queue
+                </td>
+                <td>or play songs</td>
+              </tr>
+
+              <tr>
+                <td>ambivalent-eve</td>
+                <td>Fri Oct 30 07:37:06 2026 +1100</td>
+                <td>
+                  added new songs and a playlist that indicates what mood they
+                  bring
+                </td>
+                <td></td>
+              </tr>
+
+              <tr>
+                <td>ambivalent-eve</td>
+                <td>Fri Oct 30 08:11:59 2026 +1100</td>
+                <td>
+                  added playlists and several new songs (at least three songs
+                  per playlist)
+                </td>
+                <td></td>
+              </tr>
+
+              <tr>
+                <td>ambivalent-eve</td>
+                <td>Fri Oct 30 08:29:45 2026 +1100</td>
+                <td>
+                  moved play-pause controls to bottom of screen to be similar to
+                  an audio player
+                </td>
+                <td></td>
+              </tr>
+
+              <tr>
+                <td>ambivalent-eve</td>
+                <td>Fri Oct 30 09:06:14 2026 +1100</td>
+                <td>reverted back the player controls layout</td>
+                <td></td>
+              </tr>
+
+              <tr>
+                <td>ambivalent-eve</td>
+                <td>Fri Oct 30 09:53:54 2026 +1100</td>
+                <td>added styling to each area and fixed audio12</td>
+                <td></td>
+              </tr>
+
+              <tr>
+                <td>ambivalent-eve</td>
+                <td>Fri Oct 30 10:06:57 2026 +1100</td>
+                <td>updated dashboard to a three-column layout</td>
+                <td></td>
+              </tr>
+
+              <tr>
+                <td>ambivalent-eve</td>
+                <td>Fri Oct 30 10:17:46 2026 +1100</td>
+                <td>fixed night button not highlighting when on</td>
+                <td>added queue panel styling, added a border</td>
+              </tr>
+
+              <tr>
+                <td>ambivalent-eve</td>
+                <td>Fri Oct 30 10:29:11 2026 +1100</td>
+                <td>added looping button that repeats the whole queue</td>
+                <td></td>
+              </tr>
+
+              <tr>
+                <td>ambivalent-eve</td>
+                <td>Fri Oct 30 10:41:46 2026 +1100</td>
+                <td>
+                  removed artists name from playlist so that it wouldnt be so
+                  cluttered
+                </td>
+                <td>
+                  added hover effects to buttons and centered the playlist
+                  visuals in general
+                </td>
+              </tr>
+
+              <tr>
+                <td>ambivalent-eve</td>
+                <td>Fri Oct 30 10:52:44 2026 +1100</td>
+                <td>added icons8 footer to credit them</td>
+                <td></td>
+              </tr>
+
+              <tr>
+                <td>ambivalent-eve</td>
+                <td>Fri Oct 30 11:03:00 2026 +1100</td>
+                <td>
+                  added a new function that allows you to add playlists to
+                  queues
+                </td>
+                <td>added comments for code</td>
+              </tr>
+
+              <tr>
+                <td>ambivalent-eve</td>
+                <td>Fri Oct 30 11:21:03 2026 +1100</td>
+                <td>notes and intro modal</td>
+                <td>added notes to several codes, brought back intro modal</td>
+              </tr>
+            </tbody>
+          </table>
+        </details>
+      </main>
+
+      <aside></aside>
+    </div>
 
     <footer>
       <p>
